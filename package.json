@@ -1,24 +1,25 @@
 {
   "name": "@nds-shop/prisma",
   "version": "1.0.0",
-  "private": true,
   "type": "module",
   "main": "./generated/index.js",
   "types": "./generated/index.d.ts",
   "exports": {
-    ".": "./generated/index.js"
+    ".": {
+      "types": "./generated/index.d.ts",
+      "import": "./generated/index.js",
+      "default": "./generated/index.js"
+    }
   },
   "scripts": {
+    "postinstall": "prisma generate",
     "generate": "prisma generate",
     "push": "prisma db push",
     "studio": "prisma studio",
-    "format": "prisma format",
-    "prepare": "prisma generate"
+    "format": "prisma format"
   },
   "dependencies": {
-    "@prisma/client": "^6.19.3"
-  },
-  "devDependencies": {
+    "@prisma/client": "^6.19.3",
     "prisma": "^6.19.3"
   }
 }

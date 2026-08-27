@@ -598,7 +598,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "D:\\Projets\\NDS-Shop-all-project\\packages\\prisma\\generated",
+      "value": "D:\\Projets\\NDS-Shop-all-project\\prisma\\generated",
       "fromEnvVar": null
     },
     "config": {
@@ -612,11 +612,11 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "D:\\Projets\\NDS-Shop-all-project\\packages\\prisma\\prisma\\schema.prisma",
+    "sourceFilePath": "D:\\Projets\\NDS-Shop-all-project\\prisma\\prisma\\schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": "../.env",
+    "rootEnvPath": null,
     "schemaEnvPath": "../.env"
   },
   "relativePath": "../prisma",
