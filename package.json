@@ -1,5 +1,5 @@
 {
-  "name": "@nds-shop/prisma",
+  "name": "@nds-shop-homebrew/prisma",
   "version": "1.0.0",
   "type": "module",
   "main": "./generated/index.js",
@@ -11,6 +11,13 @@
       "default": "./generated/index.js"
     }
   },
+  "files": [
+    "prisma/schema.prisma",
+    "index.ts",
+    "generated/",
+    "!generated/*.node",
+    "!generated/*.node.tmp*"
+  ],
   "scripts": {
     "postinstall": "prisma generate",
     "generate": "prisma generate",
